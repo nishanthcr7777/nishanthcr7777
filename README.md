@@ -1,20 +1,100 @@
-# 💫 About Me:
-Hii all,this is Nishanth B<br>I am a B.Tech IT student at Chennai Institute of Technology, Chennai. This repository showcases my projects and work as part of my learning journey in Information Technology.<br>
+<h1 align="center">👋 Hello, I'm Nishanth B!</h1>
+<p align="center">
+🚀 Backend & AI Systems Engineer | 🔐 Blockchain Security Builder | 🌍 Open Source Contributor
+</p>
 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&pause=1000&color=00FF88&center=true&vCenter=true&width=650&lines=Backend+Engineer;AI+Systems+Builder;Blockchain+Security+Engineer;Open+Source+Contributor;550%2B+LeetCode+%7C+1600%2B+Rating;Always+Learning+%F0%9F%94%A5" />
+</p>
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/nishanth-b-cr7) 
+---
 
-# 💻 Tech Stack:
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white) ![Windows Terminal](https://img.shields.io/badge/Windows%20Terminal-%234D4D4D.svg?style=for-the-badge&logo=windows-terminal&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Blender](https://img.shields.io/badge/blender-%23F5792A.svg?style=for-the-badge&logo=blender&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![Unreal Engine](https://img.shields.io/badge/unrealengine-%23313131.svg?style=for-the-badge&logo=unrealengine&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=nishanthcr7777&theme=highcontrast&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=nishanthcr7777&theme=highcontrast&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=nishanthcr7777&theme=highcontrast&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+### 🧠 About Me
+- 🎓 B.Tech IT @ Chennai Institute of Technology  
+- 🏆 Web3conf’25 Winner | Cardano IBW Top 5  
+- 💼 Former SDE Intern @ TVS Automobile Solutions  
+- 🌍 Open Source Contributor @ BrainGlobe  
+- 📈 550+ LeetCode | 1600+ Contest Rating  
+- 🛠️ Builder of secure, AI-powered backend systems used by real users  
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=nishanthcr7777&theme=radical&no-frame=false&no-bg=true&margin-w=4)
+---
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+### 💼 Experience
+**SDE Intern — TVS Automobile Solutions (TVS Group)**  
+- Built AI-powered enterprise ticketing system handling 1000+ queries  
+- Integrated Generative AI for summaries & sentiment analysis  
+- Implemented real-time chat using Socket.IO  
+- Designed RBAC-based workflow system  
+- Backend: Node.js, Express, MySQL, JWT  
+
+---
+
+### 🌍 Open Source Contribution
+**Contributor — BrainGlobe (NIU Group)**  
+- Python-based enhancements & bug fixes  
+- Collaborated via GitHub PRs & issue reviews  
+- Worked within large modular research codebases  
+
+---
+
+### ⚡ Fun Fact
+> *“I design systems that audit themselves before production deploy.”*
+
+<p align="center">
+  <img src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" width="300"/>
+</p>
+
+---
+
+### 🛠️ Tech Stack
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,java,js,react,nodejs,fastapi,mysql,mongodb,docker,git,github&perline=6" />
+</p>
+
+---
+
+### 🚀 Featured Projects
+- 🔐 **NexOps - Security-First AI Framework for Bitcoin Cash**  
+- 📊 **Bulk Resume Analyzer (93% ATS Alignment)**  
+- ⚛️ **DecohereX - IBM Quantum Backend Analyzer & Job Orchestrator**
+
+---
+
+### 📊 Competitive Programming
+<p align="center">
+  <img src="https://leetcard.jacoblin.cool/bnishanthcr7?theme=dark&font=JetBrains%20Mono" />
+</p>
+
+---
+
+### 📈 GitHub Stats & Activity
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=nishanthcr7777&theme=tokyonight" />
+</p>
+
+---
+
+### 🧠 Currently Exploring
+- Distributed Systems Design  
+- Blockchain Security Engineering  
+- AI-Controlled Development Pipelines  
+- Advanced Backend Architectures  
+
+---
+
+### ☕ Let's Connect!
+<p align="center">
+  <a href="mailto:bnishanthtpm06@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+  <a href="https://linkedin.com/in/n1shanth">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin"/>
+  </a>
+  <a href="https://github.com/nishanthcr7777">
+    <img src="https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github"/>
+  </a>
+</p>
+
+---
+
 
