@@ -1,10 +1,10 @@
 <h1 align="center">👋 Hello, I'm Nishanth B!</h1>
 <p align="center">
-🚀 Backend & AI Systems Engineer | 🔐 Blockchain Security Builder | 🌍 Open Source Contributor
+🚀 Backend Engineer | AI-Native Systems Builder | 🔐 Secure & Scalable Architectures
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&pause=1000&color=00FF88&center=true&vCenter=true&width=650&lines=Backend+Engineer;AI+Systems+Builder;Blockchain+Security+Engineer;Open+Source+Contributor;550%2B+LeetCode+%7C+1600%2B+Rating;Always+Learning+%F0%9F%94%A5" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&pause=1000&color=00FF88&center=true&vCenter=true&width=650&lines=Backend+Engineer;AI-Native+Systems+Builder;Secure+Architecture+Design;Open+Source+Contributor;1600%2B+LeetCode+Rating;Always+Building+%F0%9F%94%A5" />
 </p>
 
 ---
@@ -14,31 +14,31 @@
 - 🏆 Web3conf’25 Winner | Cardano IBW Top 5  
 - 💼 Former SDE Intern @ TVS Automobile Solutions  
 - 🌍 Open Source Contributor @ BrainGlobe  
-- 📈 550+ LeetCode | 1600+ Contest Rating  
-- 🛠️ Builder of secure, AI-powered backend systems used by real users  
+- 📈 1600+ LeetCode Contest Rating  
+- 🛠️ Focused on building production-ready backend systems integrating AI and secure deployment pipelines  
 
 ---
 
 ### 💼 Experience
 **SDE Intern — TVS Automobile Solutions (TVS Group)**  
-- Built AI-powered enterprise ticketing system handling 1000+ queries  
-- Integrated Generative AI for summaries & sentiment analysis  
-- Implemented real-time chat using Socket.IO  
-- Designed RBAC-based workflow system  
-- Backend: Node.js, Express, MySQL, JWT  
+- Built and deployed an AI-assisted enterprise ticketing backend handling 1000+ customer queries  
+- Integrated LLM-based summarization and sentiment analysis to assist support workflows  
+- Designed RESTful APIs with JWT authentication and MySQL persistence  
+- Implemented real-time communication using Socket.IO  
+- Engineered role-based access control (RBAC) for structured resolution pipelines  
 
 ---
 
 ### 🌍 Open Source Contribution
 **Contributor — BrainGlobe (NIU Group)**  
-- Python-based enhancements & bug fixes  
-- Collaborated via GitHub PRs & issue reviews  
-- Worked within large modular research codebases  
+- Contributed Python-based enhancements and bug fixes to modular research tooling  
+- Collaborated through structured pull requests and issue discussions  
+- Worked within large-scale, production-grade scientific codebases  
 
 ---
 
 ### ⚡ Fun Fact
-> *“I design systems that audit themselves before production deploy.”*
+> *Focused on building systems that prioritize validation, observability, and secure production deployment.*
 
 <p align="center">
   <img src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" width="300"/>
@@ -48,15 +48,15 @@
 
 ### 🛠️ Tech Stack
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,java,js,react,nodejs,fastapi,mysql,mongodb,docker,git,github&perline=6" />
+  <img src="https://skillicons.dev/icons?i=python,java,js,nodejs,fastapi,mysql,mongodb,docker,git,github,react&perline=6" />
 </p>
 
 ---
 
 ### 🚀 Featured Projects
-- 🔐 **NexOps - Security-First AI Framework for Bitcoin Cash**  
-- 📊 **Bulk Resume Analyzer (93% ATS Alignment)**  
-- ⚛️ **DecohereX - IBM Quantum Backend Analyzer & Job Orchestrator**
+- 🔐 **NexOps — AI-Assisted Smart Contract Operations Layer with Deterministic Validation Pipelines**  
+- 📊 **Bulk Resume Analyzer — AI-Driven ATS-Style Resume Processing Platform (93% Benchmark Alignment)**  
+- ⚛️ **DecohereX — ML-Powered Quantum Backend Optimization & Job Orchestration Dashboard**
 
 ---
 
@@ -75,10 +75,10 @@
 ---
 
 ### 🧠 Currently Exploring
-- Distributed Systems Design  
-- Blockchain Security Engineering  
-- AI-Controlled Development Pipelines  
-- Advanced Backend Architectures  
+- Distributed Systems & Scalability Patterns  
+- Backend Performance Optimization  
+- Secure Smart Contract Engineering  
+- AI-Augmented Development Workflows  
 
 ---
 
@@ -96,5 +96,3 @@
 </p>
 
 ---
-
-
