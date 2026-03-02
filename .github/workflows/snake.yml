@@ -1,0 +1,45 @@
+name: GitHub Snake Game
+
+on:
+  # Schedule the workflow to run daily at midnight UTC
+  schedule:
+    - cron: "0 0 * * *"
+  # Allow manual triggering of the workflow
+  workflow_dispatch:
+  # Trigger the workflow on pushes to the main branch
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      
+      # Step 2: Generate the snake animations
+      - name: Generate GitHub Contributions Snake Animations
+        uses: Platane/snk@v3
+        with:
+          # GitHub username to generate the animation for
+          github_user_name: nishanthcr7777
+          # Define the output files and their configurations
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      # Step 3: Push generated files to output branch
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
