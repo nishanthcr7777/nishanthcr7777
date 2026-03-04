@@ -82,6 +82,13 @@
 
 ---
 
+### 🐍 Contributions Snake
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nishanthcr7777/nishanthcr7777/output/github-snake.svg" />
+</p>
+
+---
+
 ### ☕ Let's Connect!
 <p align="center">
   <a href="mailto:bnishanthtpm06@gmail.com">
