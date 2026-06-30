@@ -4,7 +4,7 @@
   </p>
 
   <p align="center">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&pause=1000&color=00FF88&center=true&vCenter=true&width=650&lines=Backend+Engineer;AI-Native+Systems+Builder;Smart+Contract+Infrastructure;Secure+Architecture+Design;Open+Source+Contributor;1600%2B+LeetCode+Rating;Always+Building+%F0%9F%94%A5" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&pause=1000&color=00FF88&center=true&vCenter=true&width=650&lines=Backend+Engineer;AI-Native+Systems+Builder;Smart+Contract+Infrastructure;Secure+Architecture+Design;Open+Source+Contributor;Always+Building+%F0%9F%94%A5" />
   </p>
 
   <p align="center">
