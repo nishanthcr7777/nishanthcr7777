@@ -22,16 +22,17 @@
   ---
 
   ### 🏆 Awards & Recognition
-  - 🥇 Overall Winner — BCH‑1 Hackcelerator (Phase 2)  
-  - Project: NexOps — Deterministic Smart Contract Operations Protocol  
-  - Award: $10,000 total prize + ecosystem support  
-  - Judged on technical execution, ecosystem impact, product vision, originality, and follow‑through  
-
+  
+  - 🥇 BCH-1 Hackcelerator (Phase 2) — **Overall Winner** · **$10,000**
+  - 🥈 Web3Conf'25 Hackathon — **First Runner-Up** · **$800**
+  - 🏅 Cardano Asia Hackathon (India Blockchain Week) — **Top 5 Finalist**  
+    *3,500+ registrations · 200 finalist teams*
+  
   ---
 
   ## ⭐ Flagship Project
 
-  ### 🔐 NexOps Protocol
+  ### NexOps Protocol
 
   AI‑assisted developer infrastructure for generating, auditing, and deploying secure **CashScript smart contracts** on the Bitcoin Cash network.
 
@@ -54,7 +55,7 @@
   - CashScript deployment workflows for Bitcoin Cash  
   - Structured knowledge base of BCH security patterns  
 
-  ### 🌐 NexOps Ecosystem
+  ### NexOps Ecosystem
   <p align="center">
     <a href="https://nexops.cash">Landing</a> •
     <a href="https://app.nexops.cash">Protocol App</a> •
@@ -65,13 +66,12 @@
 
   ---
 
-  ### 🧠 About Me
-  - 🎓 B.Tech Information Technology — Chennai Institute of Technology  
-  - 🏆 Web3Conf’25 Winner | Cardano India Blockchain Week Top‑5  
-  - 💼 Former SDE Intern — TVS Automobile Solutions (TVS Group)  
-  - 🌍 Open‑Source Contributor — BrainGlobe  
-  - 📈 1600+ LeetCode Contest Rating  
-  - I focus on building **secure backend systems, AI‑native developer tools, and deterministic execution pipelines for blockchain infrastructure.**  
+  ### About Me
+  - B.Tech Information Technology — Chennai Institute of Technology  
+  - Former SDE Intern — TVS Automobile Solutions (TVS Group)  
+  - Open‑Source Contributor — BrainGlobe  
+  - 1600+ LeetCode Contest Rating  
+  - I focus on building **secure backend systems, AI‑native developer tools, and deterministic execution pipelines.**  
 
   ---
 
@@ -94,13 +94,19 @@
   ---
 
   ### 🚀 Featured Projects
-  - 🔐 **NexOps Protocol** — BCH‑1 Hackcelerator Overall Winner  
-    AI‑assisted smart contract operations layer for Bitcoin Cash with deterministic generation and automated verification.  
-    → https://nexops.cash  
-  - 📊 **Bulk Resume Analyzer**  
-    AI‑driven ATS‑style resume processing platform.
-  - ⚛️ **DecohereX**  
-    ML‑powered quantum backend optimization and job orchestration dashboard.  
+
+- **NexOps Protocol**  
+  AI-assisted infrastructure for generating, auditing, and deploying secure Bitcoin Cash smart contracts.  
+  → https://github.com/NexOps-cash
+
+- **HelmOS**  
+  An AI operating system for founders that combines memory, planning, research, and execution into a single workspace.
+
+- **Bulk Resume Analyzer**  
+  AI-powered recruitment intelligence platform for resume analysis, candidate evaluation, and hiring insights.
+
+- **DecohereX**  
+  AI-assisted quantum job orchestration and backend optimization platform for IBM Quantum workloads.  
 
   ---
 
@@ -155,9 +161,6 @@
     </a>
     <a href="https://linkedin.com/in/n1shanth">
       <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin"/>
-    </a>
-    <a href="https://github.com/nishanthcr7777">
-      <img src="https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github"/>
     </a>
   </p>
 
