@@ -32,7 +32,9 @@ jobs:
 
       - name: Generate ASCII portrait SVG
         run: |
-          if [ -f assets/source.png ] || [ -f assets/source.jpg ] || [ -f assets/source.jpeg ] || [ -f assets/source.webp ]; then
+          if [ -f assets/ascii-art.txt ]; then
+            python scripts/generate_portrait_from_txt.py assets/ascii-art.txt assets/portrait.svg
+          elif [ -f assets/source.png ] || [ -f assets/source.jpg ] || [ -f assets/source.jpeg ] || [ -f assets/source.webp ]; then
             SRC=$(ls assets/source.png assets/source.jpg assets/source.jpeg assets/source.webp 2>/dev/null | head -n1)
             python scripts/generate_ascii_svg.py "$SRC" assets/portrait.svg
           else
