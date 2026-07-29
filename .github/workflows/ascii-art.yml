@@ -25,32 +25,32 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -r scripts/requirements.txt
+          pip install -r .github/scripts/requirements.txt
 
       - name: Generate ASCII art PNG
-        run: python scripts/generate_ascii.py
+        run: python .github/scripts/generate_ascii.py
 
       - name: Generate ASCII portrait SVG
         run: |
-          if [ -f assets/ascii-art.txt ]; then
-            python scripts/generate_portrait_from_txt.py assets/ascii-art.txt assets/portrait.svg
-          elif [ -f assets/source.png ] || [ -f assets/source.jpg ] || [ -f assets/source.jpeg ] || [ -f assets/source.webp ]; then
-            SRC=$(ls assets/source.png assets/source.jpg assets/source.jpeg assets/source.webp 2>/dev/null | head -n1)
-            python scripts/generate_ascii_svg.py "$SRC" assets/portrait.svg
+          if [ -f .github/assets/ascii-art.txt ]; then
+            python .github/scripts/generate_portrait_from_txt.py .github/assets/ascii-art.txt .github/assets/portrait.svg
+          elif [ -f .github/assets/source.png ] || [ -f .github/assets/source.jpg ] || [ -f .github/assets/source.jpeg ] || [ -f .github/assets/source.webp ]; then
+            SRC=$(ls .github/assets/source.png .github/assets/source.jpg .github/assets/source.jpeg .github/assets/source.webp 2>/dev/null | head -n1)
+            python .github/scripts/generate_ascii_svg.py "$SRC" .github/assets/portrait.svg
           else
-            python scripts/generate_portrait_placeholder.py assets/portrait.svg
+            python .github/scripts/generate_portrait_placeholder.py .github/assets/portrait.svg
           fi
 
       - name: Generate info / achievements / experience SVGs
         run: |
-          python scripts/generate_info_svg.py
-          python scripts/generate_achievements_svg.py
-          python scripts/generate_experience_svg.py
+          python .github/scripts/generate_info_svg.py
+          python .github/scripts/generate_achievements_svg.py
+          python .github/scripts/generate_experience_svg.py
 
       - name: Commit and push if changed
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Actions Bot"
-          git add assets/myself.png assets/portrait.svg assets/info.svg assets/achievements.svg assets/experience.svg
+          git add .github/assets/myself.png .github/assets/portrait.svg .github/assets/info.svg .github/assets/achievements.svg .github/assets/experience.svg
           git diff --staged --quiet || git commit -m "chore: regenerate profile art [skip ci]"
           git push

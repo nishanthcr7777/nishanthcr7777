@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=26&duration=3000&pause=1000&color=00FF88&center=true&vCenter=true&width=750&lines=Backend+Engineer;AI-Native+Systems+Builder;Smart+Contract+Infrastructure;Secure+Architecture+Design;Open+Source+Contributor;Always+Building+%F0%9F%94%A5)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=26&duration=3000&pause=1000&color=00FF88&center=true&vCenter=true&width=750&lines=Backend+Engineer;AI-Native+Systems+Builder;Smart+Contract+Infrastructure;Secure+Architecture+Design;Open+Source+Contributor;Always+Building)](https://git.io/typing-svg)
 
 </div>
 
@@ -12,10 +12,10 @@
   <table>
     <tr>
       <td align="center" width="45%">
-        <img src="assets/portrait.svg" alt="Nishanth B ASCII portrait" width="100%" />
+        <img src=".github/assets/portrait.svg" alt="Nishanth B ASCII portrait" width="100%" />
       </td>
       <td align="center" width="55%">
-        <img src="assets/info.svg" alt="Nishanth B Info" width="100%" />
+        <img src=".github/assets/info.svg" alt="Nishanth B Info" width="100%" />
       </td>
     </tr>
   </table>
@@ -31,13 +31,13 @@
 
 ---
 
-## 👨‍💻 About Me
+## <img src="https://cdn.simpleicons.org/readme/70A5FD" width="24" height="24" alt=""/> About Me
 
 I'm a Backend Engineer and AI-Native Systems Builder from Chennai, currently pursuing B.Tech in Information Technology at Chennai Institute of Technology. Former **SDE Intern at TVS Automobile Solutions (TVS Group)** and **Open-Source Contributor at BrainGlobe**, I build production-grade backend systems, AI-native developer tools, and secure smart contract infrastructure. My work lives at the intersection of **secure architectures**, **deterministic pipelines**, and **AI-assisted developer tooling** — including **NexOps Protocol** for Bitcoin Cash smart contracts.
 
 ---
 
-## 🚀 Projects
+## <img src="https://cdn.simpleicons.org/gnubash/00FF88" width="24" height="24" alt=""/> Projects
 
 ### NexOps Protocol
 
@@ -45,13 +45,13 @@ AI-assisted developer infrastructure for generating, auditing, and deploying sec
 
 <p align="center">
   <a href="https://nexops.cash">
-    <img src="https://img.shields.io/badge/Website-nexops.cash-00ff88?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/Website-nexops.cash-00ff88?style=for-the-badge&logo=googlechrome&logoColor=white" />
   </a>
   <a href="https://github.com/NexOps-cash">
     <img src="https://img.shields.io/badge/GitHub-NexOps--cash-black?style=for-the-badge&logo=github" />
   </a>
   <a href="https://docs.nexops.cash">
-    <img src="https://img.shields.io/badge/Docs-Protocol%20Documentation-blue?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/Docs-Protocol%20Documentation-blue?style=for-the-badge&logo=readthedocs&logoColor=white" />
   </a>
 </p>
 
@@ -76,20 +76,20 @@ AI-assisted developer infrastructure for generating, auditing, and deploying sec
   <table>
     <tr>
       <td align="center" width="50%" valign="top">
-        <img src="assets/achievements.svg" alt="Achievements" width="100%" />
+        <img src=".github/assets/achievements.svg" alt="Achievements" width="100%" />
       </td>
       <td align="center" width="50%" valign="top">
-        <img src="assets/experience.svg" alt="Professional Experience" width="100%" />
+        <img src=".github/assets/experience.svg" alt="Professional Experience" width="100%" />
       </td>
     </tr>
   </table>
 </div>
 
-## 🤝 Connect With Me
+## <img src="https://cdn.simpleicons.org/googlechrome/70A5FD" width="24" height="24" alt=""/> Connect With Me
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-nishanthcr7777-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/nishanthcr7777)
+[![Portfolio](https://img.shields.io/badge/Portfolio-nishanth.vip-0A66C2?style=flat-square&logo=googlechrome&logoColor=white)](https://nishanth.vip)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-n1shanth-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/n1shanth)
 [![Email](https://img.shields.io/badge/Email-bnishanthtpm06@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:bnishanthtpm06@gmail.com)
 [![LeetCode](https://img.shields.io/badge/LeetCode-bnishanthcr7-FFA116?style=flat-square&logo=leetcode&logoColor=white)](https://leetcode.com/bnishanthcr7)
