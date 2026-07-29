@@ -1,0 +1,54 @@
+name: Generate ASCII Profile Art
+
+on:
+  schedule:
+    # Runs every Sunday at midnight UTC
+    - cron: "0 0 * * 0"
+  workflow_dispatch: # Allow manual trigger from GitHub Actions UI
+
+jobs:
+  generate-ascii:
+    name: Regenerate profile art and SVG cards
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r scripts/requirements.txt
+
+      - name: Generate ASCII art PNG
+        run: python scripts/generate_ascii.py
+
+      - name: Generate ASCII portrait SVG
+        run: |
+          if [ -f assets/source.png ] || [ -f assets/source.jpg ] || [ -f assets/source.jpeg ] || [ -f assets/source.webp ]; then
+            SRC=$(ls assets/source.png assets/source.jpg assets/source.jpeg assets/source.webp 2>/dev/null | head -n1)
+            python scripts/generate_ascii_svg.py "$SRC" assets/portrait.svg
+          else
+            python scripts/generate_portrait_placeholder.py assets/portrait.svg
+          fi
+
+      - name: Generate info / achievements / experience SVGs
+        run: |
+          python scripts/generate_info_svg.py
+          python scripts/generate_achievements_svg.py
+          python scripts/generate_experience_svg.py
+
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Actions Bot"
+          git add assets/myself.png assets/portrait.svg assets/info.svg assets/achievements.svg assets/experience.svg
+          git diff --staged --quiet || git commit -m "chore: regenerate profile art [skip ci]"
+          git push
