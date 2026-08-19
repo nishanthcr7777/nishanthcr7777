@@ -7,42 +7,57 @@ OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "..", "assets", "
 
 STATIC = bool(os.environ.get("STATIC"))
 
-# Styling
 BG = "#0d1117"
 BG2 = "#111722"
 FRAME = "#30363d"
 TITLE_TEXT = "#7d8590"
-TEXT_MAIN = "#c9d1d9"
-COLOR_KEY = "#79c0ff"
-COLOR_VAL = "#c9d1d9"
-COLOR_USER = "#ff7b72"
-COLOR_HOST = "#79c0ff"
+MAIN = "#c9d1d9"
+DIM = "#8b949e"
+KEY = "#79c0ff"
+USER = "#ff7b72"
+HOST = "#79c0ff"
 CURSOR = "#c9d1d9"
+GOLD = "#e3b341"
+GREEN = "#3fb950"
+CYAN = "#79c0ff"
+RED = "#f97583"
+PURPLE = "#d2a8ff"
+TEAL = "#39d353"
 
-# Layout
-CANVAS_W = 450
-CANVAS_H = 340
+CANVAS_W = 520
 TITLEBAR_H = 30
-PAD = 20
-CELL_H = 22
-FONT_SIZE = 14
+PAD = 22
+CELL_H = 20
+FONT_SIZE = 13
+ROW_DUR = 0.28
+STAGGER = 0.22
 
+# Each line: list of (text, color, bold?)  |  None = spacer
 LINES = [
-    [("nishanthcr7777", COLOR_USER), ("@", TEXT_MAIN), ("github", COLOR_HOST)],
-    [("----------------", TEXT_MAIN)],
-    [("Role       ", COLOR_KEY), ("*Backend Engineer & AI-Native Systems", COLOR_VAL)],
-    [("Education  ", COLOR_KEY), ("*B.Tech IT, Chennai Institute of Technology", COLOR_VAL)],
-    [("Exp        ", COLOR_KEY), ("*SDE Intern @ TVS Automobile Solutions", COLOR_VAL)],
-    [("           ", COLOR_KEY), ("*Open-Source Contributor @ BrainGlobe", COLOR_VAL)],
-    [("Awards     ", COLOR_KEY), ("*BCH-1 Hackcelerator Overall Winner", COLOR_VAL)],
-    [("           ", COLOR_KEY), ("*Web3Conf'25 First Runner-Up", COLOR_VAL)],
-    [("           ", COLOR_KEY), ("*ETHnile Winner", COLOR_VAL)],
-    [("           ", COLOR_KEY), ("*LeetCode Contest Rating 1600+", COLOR_VAL)],
+    [("nishanthcr7777", USER, False), ("@", MAIN, False), ("github", HOST, False)],
+    [("────────────────────────", DIM, False)],
+    None,
+    [("Role      ", KEY, False), ("Backend Engineer & AI-Native Systems", TEAL, True)],
+    None,
+    [("Education ", KEY, False), ("B.Tech IT  ·  Chennai Institute of Technology", PURPLE, False)],
+    None,
+    [("Exp       ", KEY, False), ("SDE Intern @ TVS Automobile Solutions", CYAN, False)],
+    [("          ", KEY, False), ("Open-Source Contributor @ BrainGlobe", CYAN, False)],
+    None,
+    [("Awards    ", KEY, False), ("BCH-1 Hackcelerator", GOLD, True),
+     ("  Overall Winner  ", MAIN, False), ("$10,000", GOLD, True)],
+    [("          ", KEY, False), ("Web3Conf'25", GREEN, True),
+     ("  First Runner-Up  ", MAIN, False), ("$800", GOLD, True)],
+    [("          ", KEY, False), ("ETHnile", PURPLE, True),
+     ("  Winner", MAIN, False)],
+    [("          ", KEY, False), ("Cardano Asia", CYAN, True),
+     ("  Top 5  ·  200+ teams  ·  3k+ regs", MAIN, False)],
+    [("          ", KEY, False), ("LeetCode", RED, True),
+     ("  Contest Rating 1600+", MAIN, False)],
 ]
 
-# Reveal timing
-ROW_DUR = 0.4
-STAGGER = 0.4
+content_rows = sum(1 if line is None else 1 for line in LINES)
+CANVAS_H = TITLEBAR_H + PAD + content_rows * CELL_H + CELL_H + PAD + 8
 
 parts = []
 parts.append(
@@ -50,71 +65,86 @@ parts.append(
     f'viewBox="0 0 {CANVAS_W} {CANVAS_H}" font-family="ui-monospace, SFMono-Regular, '
     f'Menlo, Consolas, monospace">'
 )
-parts.append('<defs>'
-             f'<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">'
-             f'<stop offset="0" stop-color="{BG2}"/><stop offset="1" stop-color="{BG}"/>'
-             f'</linearGradient></defs>')
-
+parts.append(
+    '<defs>'
+    f'<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">'
+    f'<stop offset="0" stop-color="{BG2}"/><stop offset="1" stop-color="{BG}"/>'
+    f'</linearGradient></defs>'
+)
 parts.append(f'<rect width="{CANVAS_W}" height="{CANVAS_H}" rx="12" fill="url(#bg)"/>')
-parts.append(f'<rect x="0.5" y="0.5" width="{CANVAS_W-1}" height="{CANVAS_H-1}" rx="12" '
-             f'fill="none" stroke="{FRAME}" stroke-width="1"/>')
-
+parts.append(
+    f'<rect x="0.5" y="0.5" width="{CANVAS_W-1}" height="{CANVAS_H-1}" rx="12" '
+    f'fill="none" stroke="{FRAME}" stroke-width="1"/>'
+)
 parts.append(f'<line x1="0" y1="{TITLEBAR_H}" x2="{CANVAS_W}" y2="{TITLEBAR_H}" stroke="{FRAME}"/>')
 for i, dotcol in enumerate(["#ff5f56", "#ffbd2e", "#27c93f"]):
     parts.append(f'<circle cx="{PAD + i*16}" cy="{TITLEBAR_H/2}" r="5" fill="{dotcol}"/>')
-parts.append(f'<text x="{CANVAS_W/2}" y="{TITLEBAR_H/2 + 4}" fill="{TITLE_TEXT}" font-size="12" '
-             f'text-anchor="middle">nishanthcr7777@github: ~$ ./info.sh</text>')
+parts.append(
+    f'<text x="{CANVAS_W/2}" y="{TITLEBAR_H/2 + 4}" fill="{TITLE_TEXT}" font-size="12" '
+    f'text-anchor="middle">nishanthcr7777@github: ~$ ./info.sh</text>'
+)
 
 start_y = TITLEBAR_H + PAD
+y = start_y
+anim_i = 0
 
-for i, line_segments in enumerate(LINES):
-    y = start_y + i * CELL_H
-    delay = i * STAGGER
+for line in LINES:
+    if line is None:
+        y += CELL_H
+        continue
 
+    delay = anim_i * STAGGER
     text_content = ""
-    for text, color in line_segments:
-        safe_text = html.escape(text)
-        text_content += f'<tspan fill="{color}">{safe_text}</tspan>'
+    for item in line:
+        text, color = item[0], item[1]
+        bold = item[2] if len(item) > 2 else False
+        weight = ' font-weight="bold"' if bold else ""
+        text_content += f'<tspan fill="{color}"{weight}>{html.escape(text)}</tspan>'
 
-    text_element = f'<text xml:space="preserve" x="{PAD}" y="{y + CELL_H * 0.7:.1f}" font-size="{FONT_SIZE}">{text_content}</text>'
+    text_element = (
+        f'<text xml:space="preserve" x="{PAD}" y="{y + CELL_H * 0.72:.1f}" '
+        f'font-size="{FONT_SIZE}">{text_content}</text>'
+    )
 
     if STATIC:
         parts.append(text_element)
-        continue
+    else:
+        parts.append(
+            f'<clipPath id="l{anim_i}"><rect x="{PAD}" y="{y}" height="{CELL_H}" width="0">'
+            f'<animate attributeName="width" from="0" to="{CANVAS_W - PAD*2}" begin="{delay:.3f}s" '
+            f'dur="{ROW_DUR:.2f}s" fill="freeze"/></rect></clipPath>'
+        )
+        parts.append(f'<g clip-path="url(#l{anim_i})">{text_element}</g>')
+        parts.append(
+            f'<rect y="{y+2}" width="8" height="{CELL_H-4}" fill="{CURSOR}" opacity="0">'
+            f'<animate attributeName="x" from="{PAD}" to="{CANVAS_W - PAD}" begin="{delay:.3f}s" '
+            f'dur="{ROW_DUR:.2f}s" fill="freeze"/>'
+            f'<set attributeName="opacity" to="0.85" begin="{delay:.3f}s"/>'
+            f'<set attributeName="opacity" to="0" begin="{delay+ROW_DUR:.3f}s"/></rect>'
+        )
 
-    parts.append(
-        f'<clipPath id="l{i}"><rect x="{PAD}" y="{y}" height="{CELL_H}" width="0">'
-        f'<animate attributeName="width" from="0" to="{CANVAS_W - PAD*2}" begin="{delay:.3f}s" '
-        f'dur="{ROW_DUR:.2f}s" fill="freeze"/></rect></clipPath>'
-    )
-    parts.append(f'<g clip-path="url(#l{i})">{text_element}</g>')
-    parts.append(
-        f'<rect y="{y+2}" width="8" height="{CELL_H-4}" fill="{CURSOR}" opacity="0">'
-        f'<animate attributeName="x" from="{PAD}" to="{CANVAS_W - PAD}" begin="{delay:.3f}s" '
-        f'dur="{ROW_DUR:.2f}s" fill="freeze"/>'
-        f'<set attributeName="opacity" to="0.85" begin="{delay:.3f}s"/>'
-        f'<set attributeName="opacity" to="0" begin="{delay+ROW_DUR:.3f}s"/></rect>'
-    )
+    y += CELL_H
+    anim_i += 1
 
-# Prompt line at the end
-end_idx = len(LINES)
-final_y = start_y + end_idx * CELL_H
-final_delay = end_idx * STAGGER
-
-parts.append(f'<text xml:space="preserve" x="{PAD}" y="{final_y + CELL_H * 0.7:.1f}" font-size="{FONT_SIZE}">'
-             f'<tspan fill="{COLOR_USER}">nishanthcr7777</tspan><tspan fill="{TEXT_MAIN}">@</tspan><tspan fill="{COLOR_HOST}">github</tspan>'
-             f'<tspan fill="{TEXT_MAIN}">:~$ </tspan></text>')
-parts.append(f'<rect x="{PAD + 160}" y="{final_y+2}" width="8" height="{CELL_H-4}" fill="{CURSOR}">'
-             f'<set attributeName="opacity" to="0" begin="0s"/>'
-             f'<set attributeName="opacity" to="1" begin="{final_delay:.3f}s"/>'
-             f'<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" '
-             f'dur="1s" repeatCount="indefinite" begin="{final_delay:.3f}s"/></rect>')
+final_delay = anim_i * STAGGER
+parts.append(
+    f'<text xml:space="preserve" x="{PAD}" y="{y + CELL_H * 0.72:.1f}" font-size="{FONT_SIZE}">'
+    f'<tspan fill="{USER}">nishanthcr7777</tspan><tspan fill="{MAIN}">@</tspan>'
+    f'<tspan fill="{HOST}">github</tspan><tspan fill="{MAIN}">:~$ </tspan></text>'
+)
+parts.append(
+    f'<rect x="{PAD + 168}" y="{y+3}" width="8" height="{CELL_H-6}" fill="{CURSOR}">'
+    f'<set attributeName="opacity" to="0" begin="0s"/>'
+    f'<set attributeName="opacity" to="1" begin="{final_delay:.3f}s"/>'
+    f'<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" '
+    f'dur="1s" repeatCount="indefinite" begin="{final_delay:.3f}s"/></rect>'
+)
 
 parts.append("</svg>")
 
 svg_data = "".join(parts)
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
-with open(OUT, "w") as f:
+with open(OUT, "w", encoding="utf-8") as f:
     f.write(svg_data)
 
 print(f"wrote {OUT} {len(svg_data)} bytes; {CANVAS_W} x {CANVAS_H}")

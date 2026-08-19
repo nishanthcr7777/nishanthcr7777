@@ -18,7 +18,7 @@ CYAN      = "#79c0ff"
 RED       = "#f97583"
 PURPLE    = "#d2a8ff"
 
-W, TITLEBAR = 420, 30
+W, TITLEBAR = 460, 30
 PAD         = 18
 FONT        = 13
 LINE_H      = 18
@@ -28,7 +28,7 @@ ENTRIES = [
     ("BCH-1 Hackcelerator", GOLD,   "Overall Winner",  "$10,000"),
     ("Web3Conf'25 Hackathon", GREEN, "First Runner-Up", "$800"),
     ("ETHnile", PURPLE,              "Winner",          None),
-    ("Cardano Asia Hackathon", CYAN, "Top 5 Finalist",  None),
+    ("Cardano Asia Hackathon", CYAN, "Top 5 Finalist", "200+ teams · 3k+ regs"),
     ("LeetCode Contest", RED,        "Rating 1600+",    None),
 ]
 
