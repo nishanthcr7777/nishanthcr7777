@@ -36,6 +36,7 @@ LINES = [
     [("           ", COLOR_KEY), ("*Open-Source Contributor @ BrainGlobe", COLOR_VAL)],
     [("Awards     ", COLOR_KEY), ("*BCH-1 Hackcelerator Overall Winner", COLOR_VAL)],
     [("           ", COLOR_KEY), ("*Web3Conf'25 First Runner-Up", COLOR_VAL)],
+    [("           ", COLOR_KEY), ("*ETHnile Winner", COLOR_VAL)],
     [("           ", COLOR_KEY), ("*LeetCode Contest Rating 1600+", COLOR_VAL)],
 ]
 
